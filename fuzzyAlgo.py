@@ -197,7 +197,7 @@ def defuzzy(score):
 
     return final_data
         
-# membership_plot()
+membership_plot()
 print(defuzzy(inference(rule_base())))
 data["score"] = defuzzy(inference(rule_base()))
 
