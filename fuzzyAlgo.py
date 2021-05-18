@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as matplt
 
-data = pd.read_csv("restoran.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/riziry/fuzzyLogic/master/datasheetRestaurant.csv")
 print("**Dataset**\n", data)
 
 # membership
@@ -189,16 +189,11 @@ def defuzzy(score):
     final_data = []
 
     for set_value in score:
-        print(type(set_value))
-        print(type(set_value["3-Star"]))
         final_data.append(defuzzy_formula(set_value))
-    print("score[0]", score[0]["3-Star"])
-    print(score[0])
 
     return final_data
         
 membership_plot()
-print(defuzzy(inference(rule_base())))
 data["score"] = defuzzy(inference(rule_base()))
 
 top10 = data.sort_values(by=["score"])
