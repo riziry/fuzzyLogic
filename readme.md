@@ -10,9 +10,9 @@ where **pelayanan** tell the quality of the restaurant services and **makanan** 
 - matplotlib
 
 Install req with:
-'''
+```
 pip3 install -r requirement.txt
-'''
+```
 
 *Process*
 i want to have the best 10 restaurant with fuzzy logic algorithm
