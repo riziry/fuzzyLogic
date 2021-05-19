@@ -8,6 +8,7 @@ where **pelayanan** tell the quality of the restaurant services and **makanan** 
 - pandas
 - numpy
 - matplotlib
+
 Install req with:
 '''
 pip3 install -r requirement.txt
